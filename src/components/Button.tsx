@@ -8,7 +8,6 @@ type Props = {
 };
 
 export default function Button({ title, onPress, backgroundColor}: Props) {
-  // Choisir automatiquement la couleur du texte selon le fond
   const textColor = backgroundColor === '#494358' ? '#fff' : '#494358';
 
   return (

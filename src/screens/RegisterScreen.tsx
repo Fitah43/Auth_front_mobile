@@ -3,6 +3,8 @@ import {View,Text,StyleSheet,TextInput,TouchableOpacity,Alert,ImageBackground} f
 import Title from "../components/Title";
 import Input from "../components/Input";
 import Button from "../components/Button";
+import Retour from '../components/Retour';
+
 type Props = {
     navigation: any;
 };
@@ -15,6 +17,7 @@ export default function Register({ navigation }: Props) {
         resizeMode="cover"
     >
         <View style={styles.container}>
+            <Retour/>
             <Title>Hello! Register to get started</Title>
             <Input placeholder="username" />
             <Input placeholder="Email" keyboardType="email-address" />
@@ -46,6 +49,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     marginTop: 20,
+    bottom: -100,
   },
   LoginText: {
     color: '#333',

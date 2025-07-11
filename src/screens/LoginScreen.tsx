@@ -4,6 +4,7 @@ import Input from '../components/Input';
 import Button from '../components/Button';
 import Title from '../components/Title';
 import Forgot from './ForgotScreen';
+import Retour from '../components/Retour';
 
 type Props = {
   navigation: any;
@@ -17,6 +18,7 @@ export default function LoginScreen({ navigation }: Props) {
         resizeMode="cover"
     >
     <View style={styles.container}>
+        <Retour/>
         <Title>Welcome back!{"\n"}Glad to see you, Again!</Title>
         
         <Input placeholder="Email" keyboardType="email-address" />
@@ -55,6 +57,7 @@ const styles = StyleSheet.create({
   forgot: {
     alignSelf: 'flex-end',
     color: '#fff',
+    marginLeft: 195, 
     marginBottom: 30,
     alignItems: 'flex-end',
     fontFamily: 'MontserratAlternates_500Medium',
@@ -62,7 +65,8 @@ const styles = StyleSheet.create({
   registerContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
-    marginTop: 20,
+    bottom: -100,
+    marginTop: 40,
   },
   registerText: {
     color: '#333',

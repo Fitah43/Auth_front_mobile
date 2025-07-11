@@ -4,6 +4,8 @@ import Title from "../components/Title";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import OTPInput from "../components/OTPInput";
+import Retour from '../components/Retour';
+
 type Props = {
     navigation: any;
 };
@@ -17,6 +19,7 @@ export default function OTP({ navigation }: Props) {
                resizeMode="cover"
            >
             <View style={styles.container}>
+                <Retour/>
                 <Title>OTP verfication</Title>
                 <Text style={styles.Indice}>Enter the verification code we just sent on your email address.</Text>
                 <OTPInput/>
@@ -53,6 +56,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     marginTop: 20,
+    bottom: -170,
   },
   ResendText: {
     color: '#333',

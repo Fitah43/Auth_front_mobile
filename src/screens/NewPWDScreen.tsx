@@ -3,6 +3,7 @@ import {View,Text,StyleSheet,TextInput,TouchableOpacity,Alert,ImageBackground} f
 import Input from '../components/Input';
 import Button from '../components/Button';
 import Title from '../components/Title';
+import Retour from '../components/Retour';
 
 type Props = {
   navigation: any;
@@ -16,6 +17,7 @@ export default function NewPWD({ navigation }: Props) {
         resizeMode="cover"
     >
     <View style={styles.container}>
+        <Retour/>
         <Title>Create new password</Title>
         <Text style={styles.Indice}>Your new password must be unique from those previously used.</Text>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ImageBackground,Image } from 'react-native';
 import Button from '../components/Button';
 import Title from '../components/Title';
+import Retour from '../components/Retour';
 
 type Props = {
   navigation: any;
@@ -15,6 +16,7 @@ export default function OK({ navigation }: Props) {
       resizeMode="cover"
     >
       <View style={styles.container}>
+        <Retour/>
         <Image
             source={require('../../assets/Successmark.png')}
             style={styles.image}

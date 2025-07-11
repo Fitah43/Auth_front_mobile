@@ -3,6 +3,8 @@ import {View,Text,StyleSheet,TextInput,TouchableOpacity,Alert,ImageBackground} f
 import Title from "../components/Title";
 import Input from "../components/Input";
 import Button from "../components/Button";
+import Retour from '../components/Retour';
+
 type Props = {
     navigation: any;
 };
@@ -16,6 +18,7 @@ export default function Forgot({ navigation }: Props) {
                resizeMode="cover"
            >
             <View style={styles.container}>
+                <Retour/>
                 <Title>Forgot password?</Title>
                 <Text style={styles.Indice}>Don't worry! It occurs. Please enter the email address linked with your account.</Text>
                 <Input placeholder="Email" keyboardType="email-address" />
@@ -48,10 +51,11 @@ const styles = StyleSheet.create({
     marginBottom: 40,
     // textAlign: 'center',
   },
-      LoginContainer: {
+    LoginContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
     marginTop: 20,
+    bottom: -170,
   },
   LoginText: {
     color: '#333',
